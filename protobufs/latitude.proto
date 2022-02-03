@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option go_package = ".";
+
+message Latitude {
+  float latitude = 1;
+  float longitude = 2;
+}

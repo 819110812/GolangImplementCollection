@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option go_package = ".";
+
+message Money {
+  string currency_code = 1;
+  int64 amount = 2;
+  int64 amount_usd = 3;
+}
+
+enum DayOfWeek {
+  MONDAY = 0;
+  TUESDAY = 1;
+  WEDNESDAY = 2;
+  THURSDAY = 3;
+  FRIDAY = 4;
+  SATURDAY = 5;
+  SUNDAY = 6;
+}
+
+message Person {
+  string FirstName = 1;
+  string MiddleName = 2;
+  string LastName = 3;
+}
