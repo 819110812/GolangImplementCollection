@@ -15,6 +15,12 @@ func Client() {
 	}
 	defer cc.Close()
 	c := db.NewGreetServiceClient(cc)
+	res := doUnaryClient(err, c)
+	log.Println(res.Result)
+
+}
+
+func doUnaryClient(err error, c db.GreetServiceClient) *db.GreetResponse {
 	req := &db.GreetRequest{
 		Greeting: &db.Greeting{
 			FirstName: "John",
@@ -25,6 +31,5 @@ func Client() {
 	if err != nil {
 		panic(err)
 	}
-	log.Println(res.Result)
-
+	return res
 }
