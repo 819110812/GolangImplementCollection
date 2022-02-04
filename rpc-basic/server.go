@@ -1,7 +1,7 @@
 package rpcs
 
 import (
-	"GolangImplementation/rpc/db"
+	"GolangImplementation/rpc-basic/db"
 	"fmt"
 	"google.golang.org/grpc"
 	"net"

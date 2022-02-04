@@ -1,6 +1,6 @@
 package main
 
-import rpcs "GolangImplementation/rpc"
+import rpcs "GolangImplementation/rpc-basic"
 
 func main() {
 	rpcs.RpcServer()
