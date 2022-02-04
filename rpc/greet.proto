@@ -1,0 +1,6 @@
+syntax = "proto3";
+package rpcs;
+
+option go_package = "./db";
+
+service GreetService{}
