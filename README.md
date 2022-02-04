@@ -3,6 +3,10 @@
 
 - [x] golang protobuf 的使用
 - [x] golang grpc 的使用
+  - [x] golang grpc unary 的使用
+  - [ ] golang grpc stream 的使用
+  - [ ] golang grpc bidirectional 的使用
+  - [ ] golang grpc 整合mongodb
 - [x] golang redis 的使用
 - [ ] golang context 的使用
 - [ ] golang goroutine 的使用
